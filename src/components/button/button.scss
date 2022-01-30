@@ -1,0 +1,40 @@
+.btn {
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    outline: 0;
+    background-color: #1976d2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #2b92f7;
+    }
+
+    .spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            width: 19px;
+            margin-right: 10px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .txt {
+        flex-grow: 1;
+    }
+}
